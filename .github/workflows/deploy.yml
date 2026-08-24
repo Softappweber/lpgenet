@@ -25,9 +25,12 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - run: npm run build
+      - name: Copy build files to root
+        run: |
+          cp -r apps/web/out/* .
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: out/
+          path: ./
 
   deploy:
     environment:
