@@ -1,259 +1,29 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html>
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>🚀 Landing Page Generator</title>
+    <meta charset="UTF-8">
+    <title>Landing Page Generator</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-        }
-
-        body {
-            background: #0d1117;
-            color: #c9d1d9;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 2rem 1rem;
-        }
-
-        .container {
-            max-width: 1000px;
-            width: 100%;
-            text-align: center;
-        }
-
-        .logo {
-            font-size: 4rem;
-            margin-bottom: 0.5rem;
-        }
-
-        h1 {
-            font-size: 2.8rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, #f0f6fc, #58a6ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 0.5rem;
-        }
-
-        .subtitle {
-            font-size: 1.2rem;
-            color: #8b949e;
-            margin-bottom: 2rem;
-        }
-
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-            gap: 1rem;
-            margin: 2rem 0;
-        }
-
-        .feature {
-            background: #161b22;
-            padding: 1.2rem 0.8rem;
-            border-radius: 12px;
-            border: 1px solid #30363d;
-            transition: transform 0.2s, border-color 0.2s;
-            font-weight: 500;
-        }
-
-        .feature:hover {
-            transform: translateY(-4px);
-            border-color: #58a6ff;
-        }
-
-        .feature .icon {
-            font-size: 2rem;
-            display: block;
-            margin-bottom: 0.4rem;
-        }
-
-        .btn-group {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            justify-content: center;
-            margin-top: 2rem;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 0.8rem 2rem;
-            border-radius: 40px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.3s;
-            border: none;
-            cursor: pointer;
-        }
-
-        .btn-primary {
-            background: #2ea043;
-            color: #ffffff;
-        }
-
-        .btn-primary:hover {
-            background: #3fb950;
-            transform: scale(1.03);
-        }
-
-        .btn-secondary {
-            background: #21262d;
-            color: #c9d1d9;
-            border: 1px solid #30363d;
-        }
-
-        .btn-secondary:hover {
-            background: #30363d;
-        }
-
-        .btn-outline {
-            background: transparent;
-            color: #58a6ff;
-            border: 1px solid #58a6ff;
-        }
-
-        .btn-outline:hover {
-            background: #58a6ff20;
-        }
-
-        .footer {
-            margin-top: 3rem;
-            font-size: 0.85rem;
-            color: #8b949e;
-            border-top: 1px solid #21262d;
-            padding-top: 1.5rem;
-            width: 100%;
-        }
-
-        .footer a {
-            color: #58a6ff;
-            text-decoration: none;
-        }
-
-        .footer a:hover {
-            text-decoration: underline;
-        }
-
-        .badge {
-            display: inline-block;
-            background: #1f2937;
-            color: #9ca3af;
-            font-size: 0.7rem;
-            padding: 0.2rem 0.8rem;
-            border-radius: 40px;
-            margin-bottom: 1rem;
-            border: 1px solid #374151;
-        }
-
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 2rem;
-            }
-            .features {
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .btn-group {
-                flex-direction: column;
-                align-items: center;
-            }
-            .btn {
-                width: 100%;
-                text-align: center;
-            }
-        }
+        body { font-family: system-ui; background: #0d1117; color: #c9d1d9; text-align: center; padding: 50px; }
+        h1 { font-size: 3rem; background: linear-gradient(135deg, #f0f6fc, #58a6ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .features { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; max-width: 800px; margin: 40px auto; }
+        .feature { background: #161b22; padding: 20px; border-radius: 8px; border: 1px solid #30363d; }
+        .btn { display: inline-block; padding: 12px 30px; background: #2ea043; color: white; text-decoration: none; border-radius: 40px; margin-top: 20px; }
     </style>
 </head>
 <body>
-
-    <div class="container">
-        <!-- Badge -->
-        <div class="badge">⚡ v2.0 · Production Ready</div>
-
-        <!-- Logo -->
-        <div class="logo">🚀</div>
-
-        <!-- Title -->
-        <h1>Landing Page Generator</h1>
-        <p class="subtitle">
-            Premium landing pages for <strong>20+ categories</strong> — generated in seconds.
-        </p>
-
-        <!-- Features Grid -->
-        <div class="features">
-            <div class="feature">
-                <span class="icon">🏡</span>
-                Real Estate
-            </div>
-            <div class="feature">
-                <span class="icon">🛒</span>
-                E‑commerce
-            </div>
-            <div class="feature">
-                <span class="icon">☁️</span>
-                SaaS
-            </div>
-            <div class="feature">
-                <span class="icon">🏥</span>
-                Healthcare
-            </div>
-            <div class="feature">
-                <span class="icon">📚</span>
-                Education
-            </div>
-            <div class="feature">
-                <span class="icon">💰</span>
-                Fintech
-            </div>
-            <div class="feature">
-                <span class="icon">✈️</span>
-                Travel
-            </div>
-            <div class="feature">
-                <span class="icon">👗</span>
-                Fashion
-            </div>
-            <div class="feature">
-                <span class="icon">🍔</span>
-                Food
-            </div>
-            <div class="feature">
-                <span class="icon">💪</span>
-                Fitness
-            </div>
-        </div>
-
-        <!-- Buttons -->
-        <div class="btn-group">
-            <a href="https://github.com/softappweber/lpgenet" target="_blank" class="btn btn-primary">
-                ⭐ View on GitHub
-            </a>
-            <a href="https://github.com/softappweber/lpgenet/issues" target="_blank" class="btn btn-secondary">
-                🐛 Report Issue
-            </a>
-            <a href="https://github.com/softappweber/lpgenet/fork" target="_blank" class="btn btn-outline">
-                🔄 Fork Project
-            </a>
-        </div>
-
-        <!-- Footer -->
-        <div class="footer">
-            <p>
-                Built with ❤️ by <a href="https://github.com/softappweber" target="_blank">softappweber</a> &middot;
-                <a href="https://github.com/softappweber/lpgenet/blob/main/LICENSE" target="_blank">MIT License</a>
-                &middot; 🚀 <a href="https://github.com/softappweber/lpgenet" target="_blank">GitHub Repo</a>
-            </p>
-        </div>
+    <h1>🚀 Landing Page Generator</h1>
+    <p style="font-size: 1.2rem; color: #8b949e;">Premium landing pages for 20+ categories</p>
+    <div class="features">
+        <div class="feature">🏡 Real Estate</div>
+        <div class="feature">🛒 E-commerce</div>
+        <div class="feature">☁️ SaaS</div>
+        <div class="feature">🏥 Healthcare</div>
+        <div class="feature">📚 Education</div>
+        <div class="feature">💰 Fintech</div>
+        <div class="feature">✈️ Travel</div>
+        <div class="feature">👗 Fashion</div>
     </div>
-
+    <a href="https://github.com/softappweber/lpgenet" class="btn">⭐ View on GitHub</a>
 </body>
 </html>
