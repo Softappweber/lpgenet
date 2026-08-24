@@ -1,0 +1,22 @@
+export const themes = [
+  { id: 'premium', name: 'Premium', category: 'Luxury', primary: '#0f2027', accent: '#ffd700', background: '#ffffff', text: '#0f2027' },
+  { id: 'elegant', name: 'Elegant', category: 'Luxury', primary: '#2c1810', accent: '#c9a96e', background: '#faf5f0', text: '#2c1810' },
+  { id: 'modern', name: 'Modern', category: 'Contemporary', primary: '#0f172a', accent: '#3b82f6', background: '#ffffff', text: '#0f172a' },
+  { id: 'luxury', name: 'Luxury', category: 'Premium', primary: '#1a0a2e', accent: '#ffd700', background: '#faf5ff', text: '#1a0a2e' },
+  { id: 'dark', name: 'Dark', category: 'Modern', primary: '#0f0f0f', accent: '#ffd700', background: '#1a1a1a', text: '#f1f5f9' },
+  { id: 'light', name: 'Light', category: 'Minimal', primary: '#ffffff', accent: '#0f172a', background: '#ffffff', text: '#0f172a' },
+  { id: 'neon', name: 'Neon', category: 'Bold', primary: '#0f172a', accent: '#22d3ee', background: '#0f172a', text: '#a5f3fc' },
+  { id: 'pastel', name: 'Pastel', category: 'Soft', primary: '#fdf2f8', accent: '#db2777', background: '#fdf2f8', text: '#831843' },
+  { id: 'corporate', name: 'Corporate', category: 'Professional', primary: '#0f2027', accent: '#e2e8f0', background: '#f1f5f9', text: '#0f2027' },
+  { id: 'creative', name: 'Creative', category: 'Artistic', primary: '#fff7ed', accent: '#f97316', background: '#fff7ed', text: '#1c1917' },
+  { id: 'tech', name: 'Tech', category: 'Modern', primary: '#f0f9ff', accent: '#0284c7', background: '#f0f9ff', text: '#0f172a' },
+  { id: 'nature', name: 'Nature', category: 'Organic', primary: '#ecfdf5', accent: '#10b981', background: '#ecfdf5', text: '#064e3b' },
+  { id: 'vintage', name: 'Vintage', category: 'Retro', primary: '#fef9e7', accent: '#a67c52', background: '#fef9e7', text: '#4a3728' },
+  { id: 'glass', name: 'Glassmorphism', category: 'Modern', primary: 'rgba(255,255,255,0.3)', accent: '#6366f1', background: 'rgba(255,255,255,0.3)', text: '#0f172a' },
+  { id: 'futuristic', name: 'Futuristic', category: 'Sci-Fi', primary: '#0b1120', accent: '#06b6d4', background: '#0b1120', text: '#cbd5e1' },
+  { id: 'bold', name: 'Bold', category: 'Strong', primary: '#0c0a1e', accent: '#ef4444', background: '#0c0a1e', text: '#f8fafc' },
+  { id: 'clean', name: 'Clean', category: 'Minimal', primary: '#ffffff', accent: '#3b82f6', background: '#ffffff', text: '#0f172a' },
+  { id: 'gradient', name: 'Gradient', category: 'Modern', primary: 'linear-gradient(145deg, #f0f4ff, #e6edf9)', accent: '#7c3aed', background: 'linear-gradient(145deg, #f0f4ff, #e6edf9)', text: '#1e293b' },
+  { id: 'retro', name: 'Retro', category: 'Vintage', primary: '#fef3c7', accent: '#d97706', background: '#fef3c7', text: '#451a03' },
+  { id: 'playful', name: 'Playful', category: 'Fun', primary: '#fdf2f8', accent: '#ec4899', background: '#fdf2f8', text: '#4c0519' }
+]
